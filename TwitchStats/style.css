@@ -1,0 +1,281 @@
+/*Sets tags to be displayed as bloacked to be compatible with 
+older web browsers.*/
+header, nav, main, footer, figcaption, textarea, input { display: block; }
+
+/*Sets the font and background color for the body.*/
+body{background-color: #1a1a1a;
+	color: #000000;
+	font-family: Verdana, Arial, sans-serif;
+}
+
+/*Sets the background color and the text color for the body. 
+padding is added around the borders to add white space.*/
+main{ padding: 30px 30px 50px 30px;
+	background-color: #ffffff;
+	font-size:16px;
+	color: #000000;
+}
+	
+/*Changes the background color and the text color for the header as well as 
+aligning the text to the center. The Tea-Dex logo will be displayed at the top 
+of each page.*/
+header { background-color: #330033; 
+	color: #000000;
+	height: 100px;
+	background-image: url(image.png);
+	background-position:center;
+	background-repeat: no-repeat;
+}
+	
+/*This keeps any h1 text hidden as the logo will be the header for the site.*/
+h1	{ margin: 0;
+	text-indent:100%;
+	white-space:nowrap;
+	overflow:hidden;
+}
+
+/*h2 tags will have a line at the bottom to show that a new idea has
+started. Padding is added to the left to show it is indented. Color is 
+set to the background of the main body and the text color differs from
+the body.*/
+h2 { background-color:#ffffff;
+	color:#000000;
+	font-size:20px;
+	border-bottom:1px solid #000000;
+	padding: 0 0 0 5px;
+	margin-right: 20px;
+	clear:left;
+}
+
+/*h3 tags wil have a different background color to allow them to stand out and 
+separate diferent ideas. The font size will be slightly bigger than the main
+body font size. Margins are set to create empty space. */
+h3 { background-color:#ffffff;
+	color:#000000;
+	font-size:15px;
+	border-bottom:1px solid #000000;
+	padding: 0 0 0 5px;
+	margin-right: 20px;
+	clear:left;
+}
+
+/*A simple heder with a configured font size and padding. This is only used to
+make "ingredients" stand out.*/
+h4{ font-size:17px;
+	padding-bottom:0px;
+}
+	
+/*Clears the format of unordered lists and takes care of any margins to
+create a navigation bar at the top.*/
+nav { font-family: Verdana, Arial, sans-serif; 
+	list-style-type: none; 
+	margin: 0; 
+	height: 40px; 
+}
+
+/*Clears the format of unordered lists and takes care of any margins to
+create a navigation bar at the top.*/
+nav ul { display: inline; 
+	margin: 0; 
+	padding: 0; 
+}
+
+/*Clears the format of a list and aligns the navigation bar to the top.
+Each link is configured to %20 to create even spacing.*/
+nav li { display: inline;
+	margin: 0; 
+	padding: 0; 
+	width: calc(100% /3);
+	float: left; 	 
+}
+
+/*Sets the text and colors for the anchor links. Text is centered
+and bolded to make the text stand out. */
+nav a { background-color: #6441a5;  
+	color: #000000; 
+	display: block; 
+	margin: 0px; 
+	height: 50px; 
+	font-size: 14px; 
+	line-height: 50px; 
+	text-decoration: none; 
+	text-transform: uppercase; 
+	font-weight: bold; 
+	text-align: center; 
+}
+
+/*Alters the color of the text and navigation boxes based on
+ user interaction with the navigation bar. When hovered over
+ the box turns a darker shade of green while the text stays light.
+ When the link is visited or active, the box turns different shades of 
+ green.*/
+nav a:link { background-color: #6441a5; 
+	color: #000000; 
+}
+nav a:visited { background-color: #1a001a; 
+	color: #ffffff; 
+}
+nav a:hover { background-color: #330033; 
+	color: #ffffff; 
+}
+nav a:active { background-color: #1a001a; 
+	color: #ffffff; 
+}
+
+/*Modifies the footer tags color, background color, font size and text
+alignment.*/
+footer{ background-color: #330033; 
+	color: #000000;
+	font-size: 10px;
+	font-style: italic;
+	text-align: center;
+	padding: 20px 20px;
+	clear:both;
+}
+
+/*Links that are displayed in the footer tag are configured based on pointer interaction.*/
+footer a:link { color:#000000;
+}
+footer a:visited {color:#bfbfbf;
+}
+footer a:hover { color:#ffffff;
+}
+
+/* Eliminates any borders around images.*/	
+img{ border-style: none;
+}
+
+/*Changes figcaption properties to display a label for images. Font is italic and it centered for style.*/		
+figcaption{display: block;
+	font-style: italic;
+	font-size: 12px;
+	text-align: center;
+}	
+
+/*An Id selector that formats the margins of the webpage. Set to a min width of 700px and 
+a max width of 1024px.*/
+#wrapper{ margin-left: auto;
+	margin-right:auto;
+	background-color: #ffffff;
+	min-width: 700px;
+	max-width: 1024px;
+}
+
+/*A class that shifts content over to the right.*/
+.floatright {float:right;
+	padding-left:20px;
+	padding-bottom: 10px;
+}
+
+/*A class that shifts content over to the left.*/
+.floatleft {float:left;
+	padding-right:20px;
+	padding-bottom: 10px;
+}
+
+/*A class that places content in the middle.*/
+.center {display: block;
+    margin-left: auto;
+    margin-right: auto;
+	padding-bottom: 10px;
+}
+
+/*A class that adds a bit of padding so all paragraphs are equally some space away from
+the next header.*/
+.breaker{padding-bottom: 20px;}
+
+/* Configures any label tag to to be aligned to the right with configured 
+margins.*/
+label	{float:left;
+	display:block;
+	text-align:left;
+	width: 8em;
+	padding-right: 5px;}
+
+/*Any input tag will configured margins. This is particular to input boxes.*/
+input{margin-bottom: 1em;}
+
+/*Text areas, on the "requests" page will have a configured text area.*/
+textarea{margin-bottom: 1em;}
+
+/*Applies to the submit button on the "requests" page. Configures margins.*/
+#mySubmit{margin-left: 12em;}
+
+/*Applies to the a border to forms.*/
+form {
+    border: 5px solid #f1f1f1;
+}
+
+/*Input tags configured to be unified in the form. Passwords are protected*/
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/*Buttons are purple and have certain interactions with the mouse.*/
+button {
+    background-color: #330033;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/*One of them is a hover color*/
+button:hover {
+    opacity: 0.8;
+}
+
+/*Different classes to be used by the divs. Mainly used to encase certain aspects of the form.*/
+
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #330033;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/*Tables have aligned text as well as a nice border*/
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.floated {
+  display: block;
+  background-color: #330033;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
