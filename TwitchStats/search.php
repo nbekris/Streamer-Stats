@@ -2,7 +2,7 @@
 //Objective, create a search page for the user to find and save their favourite streamers.
 include('session.php');
 include('connection.php');
-include('searchPHP.php')
+include('searchPHP.php');
 ?>
 
 <!DOCTYPE html>
